@@ -7,15 +7,15 @@
   <style>
     :root {
   --primary-color: #2c3e50;
-  --secondary-color: #3498db;
+  --secondary-color: #00d5ff;;
   --accent-color: #e74c3c;
   --success-color: #2ecc71;
-  --text-color: #34495e;
-  --light-bg: #f8f9fa;
+  --text-color: #ffffff;
+  --light-bg: #ffffff;
   --card-bg: #ffffff;
   --border-color: #e0e0e0;
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --announcement-color: #fff3cd;
+  --announcement-color: rgba(255,255,255,0.300);
   --dark-bg: #1a1a1a;
   --dark-card: #2a2a2a;
   --dark-text: #e0e0e0;
@@ -33,6 +33,10 @@
 }
 
 body {
+  background-image: url('wallpaper.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: var(--font-main);
   background-color: var(--light-bg);
   margin: 0;
@@ -40,7 +44,6 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   transition: var(--transition);
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
   min-height: 100vh;
 }
 
@@ -71,11 +74,20 @@ body[data-theme="dark"] {
   }
 }
 
+.url {
+  text-decoration: none;
+  color: #00d5ff;
+}
+
 header {
   grid-column: 1 / -1;
   text-align: center;
   margin: 20px 0 30px;
   position: relative;
+}
+
+.href-color {
+    color: #00d5ff;
 }
 
 .logo {
@@ -164,21 +176,11 @@ body[data-theme="dark"] .subtitle {
   background: var(--announcement-color);
   padding: 25px;
   border-radius: var(--border-radius);
-  border: 2px solid #ffecb5;
+  backdrop-filter: blur(5px);
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
   box-shadow: var(--box-shadow);
-}
-
-.announcement-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 100%;
-  background: linear-gradient(to bottom, #ffc107, #ff9800);
 }
 
 body[data-theme="dark"] .announcement-section {
@@ -194,7 +196,7 @@ body[data-theme="dark"] .announcement-section {
 }
 
 .announcement-title {
-  color: #856404;
+  color: #ffffff;
   margin: 0;
   font-size: 1.5rem;
   display: flex;
@@ -204,8 +206,7 @@ body[data-theme="dark"] .announcement-section {
 
 .refresh-button {
   background: rgba(255, 255, 255, 0.3);
-  border: 1px solid #856404;
-  color: #856404;
+  color: #ffffff;
   padding: 8px 15px;
   border-radius: 6px;
   cursor: pointer;
@@ -217,7 +218,7 @@ body[data-theme="dark"] .announcement-section {
 }
 
 .refresh-button:hover {
-  background: #856404;
+  background: 00d5ff;
   color: white;
 }
 
@@ -227,6 +228,8 @@ body[data-theme="dark"] .announcement-section {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .release-section:hover, .discussion-section:hover {
@@ -512,17 +515,18 @@ body[data-theme="dark"] .discussion-section {
   grid-column: 1 / -1;
   margin-top: 40px;
   padding: 25px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
   font-size: 0.95rem;
-  color: #666;
+  color: #ffffff;
   text-align: center;
   box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 body[data-theme="dark"] .disclaimer-section {
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
   color: #aaa;
   border-color: var(--dark-border);
 }
@@ -565,6 +569,8 @@ body[data-theme="dark"] .disclaimer-section {
   border-radius: var(--border-radius);
   margin: 25px 0;
   box-shadow: var(--box-shadow);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
   grid-column: 1 / -1;
 }
 
@@ -728,6 +734,17 @@ body[data-theme="dark"] .stat-label {
 
 <div class="footer">
   <p>Copyright © 2025 beimen-pan.github.io</p>
+<p style="text-align: center;"><a href="https://icp.gov.moe/?keyword=20258333" class="url"  target="_blank" rel="noopener">萌ICP备20258333</a> | <a href="https://space.bilibili.com/1587900578"  class="url" target="_blank" rel="noopener">Bilibili</a></p>
+
+</style></head><body><div class="center-text">
+					<p>本站已安全运行了<b><strong>
+								<script language="JavaScript" type="text/javascript">
+									var urodz = new Date("6/1/2025");var now = new Date();var ile = now.getTime() - urodz.getTime();var dni = Math.floor(ile / (1000 * 60 * 60 * 24));document.write( + dni)
+								</script>
+							</strong></b>天
+<p /></div></body>
+
+
 </div>
   </div>
 
